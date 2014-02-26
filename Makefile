@@ -1,4 +1,4 @@
-all: compiled/zshrc compiled/bashrc
+all: compiled/zshrc compiled/bashrc compiled/vimrc
 
 install:
 	cd compiled && for file in * ; do \
