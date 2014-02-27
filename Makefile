@@ -23,9 +23,9 @@ compiled/bashrc: shell/*.bash shell/*.sh
 
 
 compiled/vimrc: vim/*.vim
-	echo "#compiled on `date`" > $@
+	echo "\"compiled on `date`" > $@
 	for file in vim/*.vim ; do \
 		echo >> $@ ; \
-		echo "#$$file" >> $@ ; \
+		echo "\"$$file" >> $@ ; \
 		cat $$file >> $@ ; \
 	done

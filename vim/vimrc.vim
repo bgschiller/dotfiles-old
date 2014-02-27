@@ -1,5 +1,12 @@
 " Make Vim more useful
 set nocompatible
+
+"Add POWERLINE!!!
+"set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
+"set laststatus=2
+"set term=xterm-256color
+set termencoding=utf-8
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
