@@ -8,3 +8,6 @@ export PATH
 PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export PYTHONPATH
+
+source /usr/local/bin/virtualenvwrapper.sh
+

@@ -1,4 +1,4 @@
-#compiled on Wed Feb 26 09:45:19 CST 2014
+#compiled on Sun Mar 16 10:15:59 CDT 2014
 
 #shell/blank.bash
 
@@ -66,6 +66,8 @@ if [[ "$EDITOR" == "" ]] ; then
   export EDITOR='vim'
 fi
 
+
+
 #shell/keys.sh
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
@@ -81,3 +83,6 @@ export PATH
 PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export PYTHONPATH
+
+source /usr/local/bin/virtualenvwrapper.sh
+
