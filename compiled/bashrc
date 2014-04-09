@@ -1,4 +1,4 @@
-#compiled on Sun Mar 16 10:15:59 CDT 2014
+#compiled on Wed Apr  9 09:03:46 CDT 2014
 
 #shell/blank.bash
 
@@ -74,11 +74,15 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 
 #shell/path.sh
 
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" #coreutils w/o g prefix
 PATH="/usr/local/bin:$PATH" #homebrew path
 PATH="/usr/local/share/python:$PATH" #pip-installed executables
 PATH="/usr/local/opt/ruby/bin:$PATH" #gem-installed executables
 PATH="$HOME/bin:$PATH"
 export PATH
+
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH
 
 PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
