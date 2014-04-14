@@ -1,6 +1,6 @@
 
 # gem install terminal-notifier
-# more info at 
+# more info at https://github.com/alloy/terminal-notifier
 notify(){
 	if [ -z $1 ]; then
 		MESSAGE="Done with Task"
