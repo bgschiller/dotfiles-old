@@ -1,4 +1,4 @@
-#compiled on Thu Apr 10 09:09:38 CDT 2014
+#compiled on Mon Apr 14 10:38:16 CDT 2014
 
 #shell/blank.bash
 
@@ -68,6 +68,18 @@ fi
 
 
 
+#shell/functions.sh
+
+# gem install terminal-notifier
+# more info at 
+notify(){
+	if [ -z $1 ]; then
+		MESSAGE="Done with Task"
+	else
+		MESSAGE="$@"
+	fi
+	terminal-notifier -message "$MESSAGE" -sound default
+}
 #shell/keys.sh
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
