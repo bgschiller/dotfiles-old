@@ -1,0 +1,5 @@
+{
+	"parser": "github",
+	"enable_mathjax":true,
+	"github_oath_token": "ca5f5b692f0bc0dad5e8e16e2e271c654204868b" //no permissions, don't both stealing.
+}

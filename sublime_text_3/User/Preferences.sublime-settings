@@ -1,5 +1,8 @@
 {
 	"font_size": 13,
-	"ignored_packages": [],
-	"translateTabsToSpaces":true
+	"ignored_packages":
+	[
+		"Markdown"
+	],
+	"translateTabsToSpaces": true
 }
