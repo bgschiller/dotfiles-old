@@ -1,4 +1,4 @@
-#compiled on Mon Apr 14 10:38:16 CDT 2014
+#compiled on Wed Apr 16 13:54:43 CDT 2014
 
 #shell/oh_my_zsh.zsh
 # Path to your oh-my-zsh configuration.
@@ -98,12 +98,14 @@ if [[ "$EDITOR" == "" ]] ; then
   export EDITOR='vim'
 fi
 
+# No permissions, don't bother stealing.
+export HOMEBREW_GITHUB_API_TOKEN=ca5f5b692f0bc0dad5e8e16e2e271c654204868b 
 
 
 #shell/functions.sh
 
 # gem install terminal-notifier
-# more info at 
+# more info at https://github.com/alloy/terminal-notifier
 notify(){
 	if [ -z $1 ]; then
 		MESSAGE="Done with Task"
@@ -119,11 +121,10 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 #shell/path.sh
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" #coreutils w/o g prefix
-PATH="/usr/local/bin:$PATH" #homebrew path
-PATH="/usr/local/share/python:$PATH" #pip-installed executables
 PATH="/usr/local/opt/ruby/bin:$PATH" #gem-installed executables
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" #Postgres.app path
 PATH="$HOME/bin:$PATH"
+PATH="/usr/local/bin:$PATH" #homebrew path
 export PATH
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"

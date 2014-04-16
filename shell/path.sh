@@ -1,10 +1,9 @@
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" #coreutils w/o g prefix
-PATH="/usr/local/bin:$PATH" #homebrew path
-PATH="/usr/local/share/python:$PATH" #pip-installed executables
 PATH="/usr/local/opt/ruby/bin:$PATH" #gem-installed executables
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" #Postgres.app path
 PATH="$HOME/bin:$PATH"
+PATH="/usr/local/bin:$PATH" #homebrew path
 export PATH
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
