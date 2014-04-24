@@ -1,4 +1,4 @@
-#compiled on Wed Apr 16 13:54:43 CDT 2014
+#compiled on Thu Apr 24 16:35:05 CDT 2014
 
 #shell/blank.bash
 
@@ -87,9 +87,12 @@ notify(){
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 #shell/path.sh
+export GOPATH=$HOME/go
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" #coreutils w/o g prefix
 PATH="/usr/local/opt/ruby/bin:$PATH" #gem-installed executables
+PATH="/usr/local/Cellar/go/1.2.1/libexec/bin:$PATH" # GOROOT-based install
+PATH="$GOPATH/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH" #Postgres.app path
 PATH="$HOME/bin:$PATH"
 PATH="/usr/local/bin:$PATH" #homebrew path
@@ -101,6 +104,8 @@ export MANPATH
 PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export PYTHONPATH
+
+
 
 source /usr/local/bin/virtualenvwrapper.sh
 
