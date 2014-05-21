@@ -1,4 +1,4 @@
-#compiled on Tue Apr 29 14:36:51 CDT 2014
+#compiled on Wed May 21 16:16:02 CDT 2014
 
 #shell/oh_my_zsh.zsh
 # Path to your oh-my-zsh configuration.
@@ -91,6 +91,14 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
 
+#shell/alias.sh
+# Pipe my public key to my clipboard.
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+#serve from local directory
+alias serve="python -m SimpleHTTPServer"
+
+
 #shell/env.sh
 # Only set this if we haven't set $EDITOR up somewhere else previously.
 if [[ "$EDITOR" == "" ]] ; then
@@ -115,10 +123,6 @@ notify(){
 	fi
 	terminal-notifier -message "$MESSAGE" -sound default
 }
-#shell/keys.sh
-# Pipe my public key to my clipboard.
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
-
 #shell/path.sh
 export GOPATH=$HOME/go
 
