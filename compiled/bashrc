@@ -1,4 +1,4 @@
-#compiled on Tue Jul  1 11:12:35 CDT 2014
+#compiled on Wed Jul  2 10:59:36 CDT 2014
 
 #shell/blank.bash
 
@@ -91,6 +91,11 @@ notify(){
 	fi
 	terminal-notifier -message "$MESSAGE" -sound default
 }
+
+shuffle() { 
+    awk 'BEGIN{srand();} {printf "%06d %s\n", rand()*1000000, $0;}' | sort -n | cut -c8-
+}
+
 #shell/path.sh
 export GOPATH=$HOME/go
 
