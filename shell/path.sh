@@ -18,5 +18,3 @@ export PYTHONPATH
 
 
 
-source /usr/local/bin/virtualenvwrapper.sh
-

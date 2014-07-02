@@ -1,4 +1,4 @@
-#compiled on Wed May 21 16:16:02 CDT 2014
+#compiled on Tue Jul  1 11:12:35 CDT 2014
 
 #shell/blank.bash
 
@@ -111,6 +111,4 @@ PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export PYTHONPATH
 
 
-
-source /usr/local/bin/virtualenvwrapper.sh
 
