@@ -4,3 +4,4 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 #serve from local directory
 alias serve="python -m SimpleHTTPServer"
 
+alias ack="ack --color"
