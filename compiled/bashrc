@@ -1,4 +1,4 @@
-#compiled on Sat Jul 12 10:53:49 CDT 2014
+#compiled on Fri Jul 18 13:42:26 CDT 2014
 
 #shell/blank.bash
 
@@ -97,6 +97,9 @@ notify(){
 shuffle() { 
     awk 'BEGIN{srand();} {printf "%06d %s\n", rand()*1000000, $0;}' | sort -n | cut -c8-
 }
+
+jl() { jq '.' $1 -C | less }
+
 
 #shell/path.sh
 export GOPATH=$HOME/go

@@ -1,4 +1,4 @@
-#compiled on Thu Jul 17 16:51:00 CDT 2014
+#compiled on Fri Jul 18 13:42:26 CDT 2014
 
 #shell/oh_my_zsh.zsh
 # Path to your oh-my-zsh configuration.
@@ -129,6 +129,9 @@ notify(){
 shuffle() { 
     awk 'BEGIN{srand();} {printf "%06d %s\n", rand()*1000000, $0;}' | sort -n | cut -c8-
 }
+
+jl() { jq '.' $1 -C | less }
+
 
 #shell/path.sh
 export GOPATH=$HOME/go
