@@ -1,4 +1,4 @@
-#compiled on Fri Jul 18 13:42:26 CDT 2014
+#compiled on Mon Aug 11 09:39:09 CDT 2014
 
 #shell/oh_my_zsh.zsh
 # Path to your oh-my-zsh configuration.
@@ -48,7 +48,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django heroku history history-substring-search)
+plugins=(git django heroku history history-substring-search jump)
 
 source $ZSH/oh-my-zsh.sh
 
