@@ -1,4 +1,4 @@
-#compiled on Fri Jul 18 13:42:26 CDT 2014
+#compiled on Thu Dec 18 10:01:13 CST 2014
 
 #shell/blank.bash
 
@@ -80,6 +80,8 @@ export HOMEBREW_GITHUB_API_TOKEN=ca5f5b692f0bc0dad5e8e16e2e271c654204868b
 export GDAL_DRIVER_PATH=/usr/local/lib/gdalplugins
 
 export DISABLE_KEYERROR=1
+
+source /usr/local/bin/virtualenvwrapper.sh
 
 #shell/functions.sh
 
