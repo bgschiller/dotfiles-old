@@ -46,10 +46,14 @@ def any_messages(driver):
 
 def unread_messages(driver):
     driver.find_element_by_name('mercurymessages').click()
+    time.sleep(2)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     messages = soup.find_all(class_='messagesContent')
     unread_messages = [m for m in messages
                        if m.find(attrs={'data-tooltip-content': "Mark as Read"})]
+    print 'found {} messages ({} unread)'.format(len(messages), len(unread_messages))
+    for unread_message in unread_messages:
+        print '  unread message from', unread_message.find(class_='author').text
     return unread_messages
 
 
@@ -60,8 +64,7 @@ def main():
 
     log_in(driver)
 
-    if not any_messages(driver):
-        return
+    driver.save_screenshot('screen.png')
 
     for unread_message in unread_messages(driver):
         send_reply(driver, unread_message.attrs['href'])
