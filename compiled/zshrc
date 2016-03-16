@@ -1,4 +1,4 @@
-#compiled on Thu Dec 18 10:48:53 CST 2014
+#compiled on Thu Dec 18 13:05:45 CST 2014
 
 #shell/oh_my_zsh.zsh
 # Path to your oh-my-zsh configuration.
@@ -114,6 +114,7 @@ export GDAL_DRIVER_PATH=/usr/local/lib/gdalplugins
 export DISABLE_KEYERROR=1
 
 source /usr/local/bin/virtualenvwrapper.sh
+source ~/.nvm/nvm.sh
 
 #shell/functions.sh
 
